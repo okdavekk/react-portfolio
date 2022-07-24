@@ -1,4 +1,5 @@
 import React from "react";
+import { Router } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.css";
 
 const styles = {
@@ -23,28 +24,47 @@ const styles = {
 };
 
 function Navbar() {
+  const history = Router();
+  
+  const aboutMePage = () => {
+    history.push("/")
+  }
+    
+   const portfolioPage = () => {
+      history.push("/portfolio")
+  }
+          
+  const contactPage = () => {
+    history.push("/contact")
+  }
+      
+  const resumePage = () => {
+    history.push("/resume")
+  }
+
   return (
     <nav style={styles.navbar}>
       <button
         style={styles.button}
+        onClick ={aboutMePage}
       >
         About Me
       </button>
       <button
         style={styles.button}
-        // onClick={props.handleIncrement}
+        onClick={portfolioPage}
       >
         Portfolio
       </button>
       <button
         style={styles.button}
-        // onClick={props.handleIncrement}
+        onClick={contactPage}
       >
         Contact
       </button>
       <button
         style={styles.button}
-        // onClick={props.handleIncrement}
+        onClick={resumePage}
       >
         Resume
       </button>
