@@ -1,22 +1,25 @@
-import React from 'react';
-import 'bootstrap/dist/css/bootstrap.css';
-
+import React from "react";
+import "bootstrap/dist/css/bootstrap.css";
 
 const styles = {
   card: {
     margin: 20,
-    background: '#e8eaf6',
+    background: "#1f1f1f",
+    borderRadius: 8,
   },
   heading: {
-    background: '#3f51b5',
+    background: "#9a74db",
     minHeight: 50,
     lineHeight: 3.5,
-    fontSize: '1.2rem',
-    color: 'white',
-    padding: '0 20px',
+    fontSize: "1.2rem",
+    color: "white",
+    padding: "0 20px",
+    borderTopLeftRadius: 8,
+    borderTopRightRadius: 8,
   },
   content: {
     padding: 20,
+    color: "white",
   },
 };
 

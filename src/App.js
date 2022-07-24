@@ -10,7 +10,8 @@ import Footer from './components/Footer';
 const styles = {
   main: {
     background: "#2f2f2f",
-    padding: 20,
+    paddingTop: 0.1,
+    height: '100vh',
   },
 }
 function App() {

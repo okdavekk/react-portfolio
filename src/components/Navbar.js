@@ -6,7 +6,7 @@ const styles = {
     display: "flex",
     marginLeft: 20,
     marginRight: 20,
-    background: "#1f1f1f",
+    background: "#2f2f2f",
     justifyContent: 'center',
 
   },
@@ -16,6 +16,9 @@ const styles = {
     fontSize: "1.2rem",
     color: "white",
     alignItems: "center",
+    borderRadius: 8,
+    margin: 4,
+
   },
 };
 
