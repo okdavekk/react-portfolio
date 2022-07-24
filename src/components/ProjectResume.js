@@ -1,6 +1,9 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.css";
 
+
+
+
 const styles = {
   card: {
     margin: 20,
@@ -23,14 +26,23 @@ const styles = {
   },
 };
 
+
+
+
 function Card() {
   return (
-    <div style={styles.card}>
-      <div style={styles.heading}>Resume</div>
-      <div style={styles.content}>
-        `Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+      <div style={styles.card}>
+        <div style={styles.heading}>Resume</div>
+        <div style={styles.content}>
+
+      <a 
+      type="button"
+      href="./Assets/Resume.pdf" 
+      download>Click To Download A Sample Resume
+      </a> 
       </div>
     </div>
+    
   );
 }
 
