@@ -11,7 +11,7 @@ const styles = {
   main: {
     background: "#2f2f2f",
     paddingTop: 0.1,
-    height: '100vh',
+    minHeight: '100vh',
   },
 }
 function App() {

@@ -1,11 +1,8 @@
 import React from "react";
-// import { foodGeniePic }  from "./Assets/foodGenie.png";
-// import { moviePreferencesPic } from "./Assets/moviePreferencesPic.png";
-// import { myPortfolioPic } from "./Assets/myPortfolioPic.png";
-// import { myWorkDaySchedulerPic } from "./Assets/myWorkDaySchedulerPic.png";
-// import { textEditorPic } from "./Assets/textEditorPic.png";
-// import { seoRefactorPic } from "./Assets/seoRefactorPic.png";
-// import "bootstrap/dist/css/bootstrap.css";
+import "bootstrap/dist/css/bootstrap.css";
+
+
+// const foodGeniePic = "./Assets/foodGeniePic";
 
 const foodGenie = "https://n3330.github.io/Food-Genie/";
 const moviePreferences = "https://shielded-waters-71876.herokuapp.com/";
@@ -23,6 +20,8 @@ const styles = {
     margin: 20,
     background: "#1f1f1f",
     borderRadius: 8,
+
+
   },
   heading: {
     background: "#9a74db",
@@ -33,6 +32,8 @@ const styles = {
     padding: "0 20px",
     borderTopLeftRadius: 8,
     borderTopRightRadius: 8,
+    alignItems: "center",
+
   },
   content: {
     padding: 20,
@@ -47,6 +48,11 @@ const styles = {
     borderRadius: 8,
     margin: 4,
   },
+  input: {
+    margin: 20,
+    height: 200,
+    width: 200,
+  },
 };
 
 function Card() {
@@ -54,61 +60,72 @@ function Card() {
     <div style={styles.card}>
       <div style={styles.heading}>Portfolio</div>
       <div style={styles.content}>
-        <ul>
+
           <button>
             <h4>Food Genie</h4>
-            <img
-              src="{foodGeniePic}"
+            <input
+              style={styles.input}
+              type="image"
+              src={require("./Assets/foodGeniePic.png")}
               alt="Food Genie"
               onClick={() => openInNewTab(foodGenie)}
-            ></img>
+            ></input>
           </button>
 
           <button>
             <h4>Movie Preferences</h4>
-            <img
-              src="{moviePreferencesPic}"
+            <input
+              style={styles.input}
+              type="image"
+              src={require("./Assets/moviePreferencesPic.png")}
               alt="Movie Preferences"
               onClick={() => openInNewTab(moviePreferences)}
-            ></img>
+            ></input>
           </button>
 
           <button>
             <h4>My HTML & CSS Portfolio</h4>
-            <img
-              src="{myPortfolioPic}"
+            <input
+              style={styles.input}
+              type="image"
+              src={require("./Assets/myPortfolioPic.png")}
               alt="My Portfolio"
               onClick={() => openInNewTab(myPortfolio)}
-            ></img>
+            ></input>
           </button>
 
           <button>
             <h4>My Work Day Scheduler</h4>
-            <img
-              src="{myWorkDaySchedulerPic}"
+            <input
+              style={styles.input}
+              type="image"
+              src={require("./Assets/myWorkDaySchedulerPic.png")}
               alt="My Work Day Scheduler"
               onClick={() => openInNewTab(myWorkDayScheduler)}
-            ></img>
+            ></input>
           </button>
 
           <button>
             <h4>Text Editor</h4>
-            <img
-              src="{textEditorPic}"
+            <input
+              style={styles.input}
+              type="image"
+              src={require("./Assets/textEditorPic.png")}
               alt="Text Editor"
               onClick={() => openInNewTab(textEditor)}
-            ></img>
+            ></input>
           </button>
 
           <button>
             <h4>SEO Refactor</h4>
-            <img
-              src="{seoRefactorPic}"
+            <input
+              style={styles.input}
+              type="image"
+              src={require("./Assets/seoRefactorPic.png")}
               alt="SEO Refactor"
               onClick={() => openInNewTab(seoRefactor)}
-            ></img>
+            ></input>
           </button>
-        </ul>
       </div>
     </div>
   );
