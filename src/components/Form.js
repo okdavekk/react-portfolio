@@ -1,45 +1,72 @@
 import React, { useState } from 'react';
 import "bootstrap/dist/css/bootstrap.css";
 
+const styles = {
+  button: {
+    display: "flex",
+    background: "#9a74db",
+    fontSize: "1.2rem",
+    color: "white",
+    alignItems: "center",
+    borderRadius: 8,
+    margin: 4,
+  },
+  input: {
+    padding: 10,
+    borderRadius: 8,
+    margin: 4,
+
+
+  },
+};
+
+
 function Form() {
-  const [firstName, setFirstName] = useState('');
-  const [lastName, setLastName] = useState('');
+  const [Name, setName] = useState('');
+  const [Email, setEmail] = useState('');
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
 
-    return name === 'firstName' ? setFirstName(value) : setLastName(value);
+    return name === 'Name' ? setName(value) : setEmail(value);
   };
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
 
-    alert(`Hello ${firstName} ${lastName}`);
-    setFirstName('');
-    setLastName('');
+    alert(`Hello Return Visitor: ${Name} ${Email}`);
+    setName('');
+    setEmail('');
   };
 
   return (
     <div>
       <p>
-        Hello {firstName} {lastName}
+        Hello Return Visitor {Name}
       </p>
       <form className="form">
         <input
-          value={firstName}
-          name="firstName"
+          style={styles.input}
+          value={Name}
+          name="Name"
           onChange={handleInputChange}
           type="text"
-          placeholder="First Name"
+          placeholder="Name"
         />
+      
+        <p>
         <input
-          value={lastName}
-          name="lastName"
+              style={styles.input}
+          value={Email}
+          name="Email"
           onChange={handleInputChange}
           type="text"
-          placeholder="Last Name"
+          placeholder="Email"
         />
-        <button type="button" onClick={handleFormSubmit}>
+        </p>
+        <button 
+        style={styles.button}
+        onClick={handleFormSubmit}>
           Submit
         </button>
       </form>
