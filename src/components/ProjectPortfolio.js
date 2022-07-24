@@ -1,9 +1,6 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.css";
 
-
-// const foodGeniePic = "./Assets/foodGeniePic";
-
 const foodGenie = "https://n3330.github.io/Food-Genie/";
 const moviePreferences = "https://shielded-waters-71876.herokuapp.com/";
 const myPortfolio = "https://okdavekk.github.io/my-portfolio/";
@@ -20,8 +17,6 @@ const styles = {
     margin: 20,
     background: "#1f1f1f",
     borderRadius: 8,
-
-
   },
   heading: {
     background: "#9a74db",
@@ -33,7 +28,6 @@ const styles = {
     borderTopLeftRadius: 8,
     borderTopRightRadius: 8,
     alignItems: "center",
-
   },
   content: {
     padding: 20,
@@ -60,72 +54,71 @@ function Card() {
     <div style={styles.card}>
       <div style={styles.heading}>Portfolio</div>
       <div style={styles.content}>
+        <button>
+          <h4>Food Genie</h4>
+          <input
+            style={styles.input}
+            type="image"
+            src={require("./Assets/foodGeniePic.png")}
+            alt="Food Genie"
+            onClick={() => openInNewTab(foodGenie)}
+          ></input>
+        </button>
 
-          <button>
-            <h4>Food Genie</h4>
-            <input
-              style={styles.input}
-              type="image"
-              src={require("./Assets/foodGeniePic.png")}
-              alt="Food Genie"
-              onClick={() => openInNewTab(foodGenie)}
-            ></input>
-          </button>
+        <button>
+          <h4>Movie Preferences</h4>
+          <input
+            style={styles.input}
+            type="image"
+            src={require("./Assets/moviePreferencesPic.png")}
+            alt="Movie Preferences"
+            onClick={() => openInNewTab(moviePreferences)}
+          ></input>
+        </button>
 
-          <button>
-            <h4>Movie Preferences</h4>
-            <input
-              style={styles.input}
-              type="image"
-              src={require("./Assets/moviePreferencesPic.png")}
-              alt="Movie Preferences"
-              onClick={() => openInNewTab(moviePreferences)}
-            ></input>
-          </button>
+        <button>
+          <h4>My HTML & CSS Portfolio</h4>
+          <input
+            style={styles.input}
+            type="image"
+            src={require("./Assets/myPortfolioPic.png")}
+            alt="My Portfolio"
+            onClick={() => openInNewTab(myPortfolio)}
+          ></input>
+        </button>
 
-          <button>
-            <h4>My HTML & CSS Portfolio</h4>
-            <input
-              style={styles.input}
-              type="image"
-              src={require("./Assets/myPortfolioPic.png")}
-              alt="My Portfolio"
-              onClick={() => openInNewTab(myPortfolio)}
-            ></input>
-          </button>
+        <button>
+          <h4>My Work Day Scheduler</h4>
+          <input
+            style={styles.input}
+            type="image"
+            src={require("./Assets/myWorkDaySchedulerPic.png")}
+            alt="My Work Day Scheduler"
+            onClick={() => openInNewTab(myWorkDayScheduler)}
+          ></input>
+        </button>
 
-          <button>
-            <h4>My Work Day Scheduler</h4>
-            <input
-              style={styles.input}
-              type="image"
-              src={require("./Assets/myWorkDaySchedulerPic.png")}
-              alt="My Work Day Scheduler"
-              onClick={() => openInNewTab(myWorkDayScheduler)}
-            ></input>
-          </button>
+        <button>
+          <h4>Text Editor</h4>
+          <input
+            style={styles.input}
+            type="image"
+            src={require("./Assets/textEditorPic.png")}
+            alt="Text Editor"
+            onClick={() => openInNewTab(textEditor)}
+          ></input>
+        </button>
 
-          <button>
-            <h4>Text Editor</h4>
-            <input
-              style={styles.input}
-              type="image"
-              src={require("./Assets/textEditorPic.png")}
-              alt="Text Editor"
-              onClick={() => openInNewTab(textEditor)}
-            ></input>
-          </button>
-
-          <button>
-            <h4>SEO Refactor</h4>
-            <input
-              style={styles.input}
-              type="image"
-              src={require("./Assets/seoRefactorPic.png")}
-              alt="SEO Refactor"
-              onClick={() => openInNewTab(seoRefactor)}
-            ></input>
-          </button>
+        <button>
+          <h4>SEO Refactor</h4>
+          <input
+            style={styles.input}
+            type="image"
+            src={require("./Assets/seoRefactorPic.png")}
+            alt="SEO Refactor"
+            onClick={() => openInNewTab(seoRefactor)}
+          ></input>
+        </button>
       </div>
     </div>
   );

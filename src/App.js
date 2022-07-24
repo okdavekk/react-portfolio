@@ -28,8 +28,8 @@ function App() {
               element={
                 <>
                   <Header />
-                  <Navbar /> 
-                  <ProjectAboutMe /> 
+                  <Navbar />
+                  <ProjectAboutMe />
                   <Footer />
                 </>
               }
@@ -42,8 +42,8 @@ function App() {
               element={
                 <>
                   <Header />
-                  <Navbar /> 
-                  <ProjectPortfolio /> 
+                  <Navbar />
+                  <ProjectPortfolio />
                   <Footer />
                 </>
               }
@@ -56,8 +56,8 @@ function App() {
               element={
                 <>
                   <Header />
-                  <Navbar /> 
-                  <ProjectContact /> 
+                  <Navbar />
+                  <ProjectContact />
                   <Footer />
                 </>
               }
@@ -70,8 +70,8 @@ function App() {
               element={
                 <>
                   <Header />
-                  <Navbar /> 
-                  <ProjectResume /> 
+                  <Navbar />
+                  <ProjectResume />
                   <Footer />
                 </>
               }
