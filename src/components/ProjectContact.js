@@ -1,4 +1,6 @@
 import React from "react";
+import Form from './Form';
+
 import "bootstrap/dist/css/bootstrap.css";
 
 const styles = {
@@ -28,7 +30,7 @@ function Card() {
     <div style={styles.card}>
       <div style={styles.heading}>Contact</div>
       <div style={styles.content}>
-        `Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+<Form />
       </div>
     </div>
   );
