@@ -21,8 +21,8 @@ function App() {
       <Header />
       <Navbar />
       <ProjectAboutMe />
-      <ProjectContact />
       <ProjectPortfolio />
+      <ProjectContact />
       <ProjectResume />
       <Footer />
     </div>
