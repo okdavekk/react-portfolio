@@ -1,9 +1,6 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.css";
 
-
-
-
 const styles = {
   card: {
     margin: 20,
@@ -26,23 +23,20 @@ const styles = {
   },
 };
 
-
-
-
 function Card() {
   return (
-      <div style={styles.card}>
-        <div style={styles.heading}>Resume</div>
-        <div style={styles.content}>
-
-      <a 
-      type="button"
-      href="./Assets/Resume.pdf" 
-      download>Click To Download A Sample Resume
-      </a> 
+    <div style={styles.card}>
+      <div style={styles.heading}>Resume</div>
+      <div style={styles.content}>
+        <p>
+          I choose not to have my full resume downloadable to the public at this
+          time. Sorry.
+        </p>
+        <a type="button" href="./Assets/Resume.pdf" download>
+          Click To Download A Sample Resume
+        </a>
       </div>
     </div>
-    
   );
 }
 

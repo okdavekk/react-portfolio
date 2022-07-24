@@ -7,6 +7,7 @@ import ProjectPortfolio from './components/ProjectPortfolio';
 import ProjectResume from './components/ProjectResume';
 import Footer from './components/Footer';
 
+
 const styles = {
   main: {
     background: "#2f2f2f",

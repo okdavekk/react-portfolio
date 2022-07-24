@@ -27,7 +27,6 @@ function Navbar() {
     <nav style={styles.navbar}>
       <button
         style={styles.button}
-        // onClick={props.handleIncrement}
       >
         About Me
       </button>
