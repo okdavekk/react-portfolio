@@ -51,7 +51,7 @@ function Card() {
         <img style={styles.image} src={Pic} alt="Me" />
         </div>
         <p>
-          I am a current student but started a consulting company recently.  More to follow when I want to present this project.
+          I am a current student but started a consulting company recently related to UAS / Drones.  More to follow when I want to present this project.
         </p>
       </div>
     </div>

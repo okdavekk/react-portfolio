@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.css";
+import { validateEmail } from "../utils/helpers";
 
 const styles = {
   button: {
@@ -18,65 +19,75 @@ const styles = {
   },
 };
 
-
 function Form() {
-  const [Name, setName] = useState('');
-  const [Email, setEmail] = useState('');
-  const [Message, setMessage] = useState('')
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
 
-  // const handleInputChange = (e) => {
-  //   // const { name, value } = e.target;
+  const handleInputChange = (e) => {
+    const { target } = e;
+    const inputType = target.name;
+    const inputValue = target.value;
 
-  //   // return name === 'Name' ? setName(value) : setEmail(value) : setMessage(value);
-  // };
+    if (inputType === "name") {
+      setName(inputValue);
+    }
+    if (inputType === "email") {
+      setEmail(inputValue);
+    }
+    if (inputType === "message") {
+      setMessage(inputValue);
+    }
+    
+  };
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
 
-    alert(`Hello Return Visitor: ${Name} ${Email} ${Message}`);
-    setName('');
-    setEmail('');
-    setMessage('')
+    if (!validateEmail(email)) {
+      alert("Email is invalid");
+      return;
+    }
+
+    setName("");
+    setEmail("");
+    setMessage("");
+    alert(`Hello: ${name}.  Thank you for adding your valid Email: ${email} and the Message: ${message}`);
   };
 
   return (
     <div>
-      <p>
-        Hello Return Visitor {Name}
-      </p>
+      <p>Hello Return Visitor {name}</p>
       <form className="form">
         <input
           style={styles.input}
-          value={Name}
-          name="Name"
-          // onChange={handleInputChange}
+          value={name}
+          name="name"
+          onChange={handleInputChange}
           type="text"
-          placeholder="Name"
-        />
-      
-        <input
-          style={styles.input}
-          value={Email}
-          name="Email"
-          // onChange={handleInputChange}
-          // type="text"
-          email="text"
-          placeholder="Email"
+          placeholder="name"
         />
 
         <input
           style={styles.input}
-          value={Message}
-          name="Message"
-          // onChange={handleInputChange}
-          // type="text"
-          email="text"
-          placeholder="Message"
+          value={email}
+          name="email"
+          onChange={handleInputChange}
+          type="text"
+          // email="text"
+          placeholder="email"
         />
 
-        <button 
-        style={styles.button}
-        onClick={handleFormSubmit}>
+        <input
+          style={styles.input}
+          value={message}
+          name="message"
+          onChange={handleInputChange}
+          type="text"
+          placeholder="message"
+        />
+
+        <button style={styles.button} onClick={handleFormSubmit}>
           Submit
         </button>
       </form>
