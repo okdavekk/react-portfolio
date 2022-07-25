@@ -26,6 +26,7 @@ const styles = {
     margin: 20,
     background: "#1f1f1f",
     borderRadius: 8,
+
   },
   heading: {
     background: "#9a74db",
@@ -41,10 +42,10 @@ const styles = {
   content: {
     padding: 20,
     color: "white",
-    textAlign: "center",
-    // minHeight: 400,
-    // height: "100vh",
-    // width: 400,
+    alignItems: "center",
+    justifyContent: "center",
+    display: "flex",
+
   },
   button: {
     display: "flex",
@@ -66,7 +67,7 @@ const styles = {
     width: "auto",
   },
   section: {
-    margin: "auto",
+    margin: 25,
     maxWidth: 300,
     background: "#2f2f2f",
     borderRadius: 8,
@@ -76,6 +77,7 @@ const styles = {
     width: 400,
   },
   subHeading: {
+    fontWeight: 500,
     background: "#9a74db",
     minHeight: 50,
     lineHeight: 3.5,
@@ -91,7 +93,7 @@ const styles = {
 
 function Card() {
   return (
-    <div className="flex-wrap" style={styles.card}>
+    <div style={styles.card}>
       <h1 className="d-flex align-items-center" style={styles.heading}>
         Portfolio
       </h1>
