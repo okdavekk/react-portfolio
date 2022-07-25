@@ -21,11 +21,25 @@ const styles = {
   content: {
     padding: 20,
     color: "white",
+    textAlign: "justify",
   },
   image: {
     height: 200,
     padding: 20,
+    margin: "auto",
+    maxWidth: 300,
+    background: "#2f2f2f",
+    borderRadius: 8,
+    textAlign: "center",
   },
+  picture: {
+    textAlign: "center",
+    paddingLeft: 20,
+    paddingRight: 20,
+    paddingBottom: 20,
+
+
+  }
 };
 
 function Card() {
@@ -33,12 +47,11 @@ function Card() {
     <div style={styles.card}>
       <h1 style={styles.heading}>About Me</h1>
       <div style={styles.content}>
+        <div style={styles.picture}>
         <img style={styles.image} src={Pic} alt="Me" />
+        </div>
         <p>
-          I am a current student but started a consulting company recently and
-          will be working to help Drone Seed refactor their maintenance and
-          operations documentation to be more efficient and comply with Federal
-          Aviation Adminsitartion regulations.
+          I am a current student but started a consulting company recently.  More to follow when I want to present this project.
         </p>
       </div>
     </div>
