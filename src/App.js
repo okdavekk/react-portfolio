@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Navbar from './components/Navbar';
 import Header from './components/Header';
 import ProjectAboutMe from './components/ProjectAboutMe';
@@ -15,20 +15,46 @@ const styles = {
     minHeight: '100vh',
   },
 }
+
 function App() {
+  
+  const [page, setPage] = useState('ProjectResume');
+
+  let CurrentPage;
+
+  if (page === 'ProjectAboutMe') CurrentPage= ProjectAboutMe;
+  if (page === 'ProjectPortfolio') CurrentPage= ProjectPortfolio;
+  if (page === 'ProjectContact') CurrentPage= ProjectContact;
+  if (page === 'ProjectResume') CurrentPage= ProjectResume;
+
   return (
     <main style={styles.main}>
-    <div>
-      <Header />
-      <Navbar />
-      <ProjectAboutMe />
-      <ProjectPortfolio />
-      <ProjectContact />
-      <ProjectResume />
+    <>
+      <Header  />
+      <Navbar setPage={setPage}/>
+      <CurrentPage />
       <Footer />
-    </div>
+    </>
     </main>
   );
 }
+
+
+
+// function App() {
+//   return (
+//     <main style={styles.main}>
+//     <div>
+//       <Header />
+//       <Navbar />
+//       <ProjectAboutMe />
+//       <ProjectPortfolio />
+//       <ProjectContact />
+//       <ProjectResume />
+//       <Footer />
+//     </div>
+//     </main>
+//   );
+// }
 
 export default App;

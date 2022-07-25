@@ -22,31 +22,24 @@ const styles = {
   },
 };
 
-function Navbar() {
+function Navbar({setPage}) {
   return (
     <nav style={styles.navbar}>
-      <button
-        style={styles.button}
-      >
-        About Me
+      <button   style={styles.button}
+        href="#projectAboutMe" onClick={() => setPage('projectAboutMe')}>
+          About Me
       </button>
-      <button
-        style={styles.button}
-        // onClick={props.handleIncrement}
-      >
-        Portfolio
+      <button   style={styles.button}
+        href="#projectPorfolio" onClick={() => setPage('projectPorfolio')}>
+         Portfolio
       </button>
-      <button
-        style={styles.button}
-        // onClick={props.handleIncrement}
-      >
-        Contact
+      <button   style={styles.button}
+        href="#projectContact" onClick={() => setPage('projectContact')}>
+         Contact
       </button>
-      <button
-        style={styles.button}
-        // onClick={props.handleIncrement}
-      >
-        Resume
+      <button   style={styles.button}
+        href="#projectResume" onClick={() => setPage('projectResume')}>
+         Resume
       </button>
     </nav>
   );
