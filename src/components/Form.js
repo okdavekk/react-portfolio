@@ -22,19 +22,21 @@ const styles = {
 function Form() {
   const [Name, setName] = useState('');
   const [Email, setEmail] = useState('');
+  const [Message, setMessage] = useState('')
 
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
+  // const handleInputChange = (e) => {
+  //   // const { name, value } = e.target;
 
-    return name === 'Name' ? setName(value) : setEmail(value);
-  };
+  //   // return name === 'Name' ? setName(value) : setEmail(value) : setMessage(value);
+  // };
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
 
-    alert(`Hello Return Visitor: ${Name} ${Email}`);
+    alert(`Hello Return Visitor: ${Name} ${Email} ${Message}`);
     setName('');
     setEmail('');
+    setMessage('')
   };
 
   return (
@@ -47,22 +49,31 @@ function Form() {
           style={styles.input}
           value={Name}
           name="Name"
-          onChange={handleInputChange}
+          // onChange={handleInputChange}
           type="text"
           placeholder="Name"
         />
       
-        <p>
         <input
           style={styles.input}
           value={Email}
           name="Email"
-          onChange={handleInputChange}
+          // onChange={handleInputChange}
           // type="text"
           email="text"
           placeholder="Email"
         />
-        </p>
+
+        <input
+          style={styles.input}
+          value={Message}
+          name="Message"
+          // onChange={handleInputChange}
+          // type="text"
+          email="text"
+          placeholder="Message"
+        />
+
         <button 
         style={styles.button}
         onClick={handleFormSubmit}>

@@ -18,7 +18,7 @@ const styles = {
 
 function App() {
   
-  const [page, setPage] = useState('ProjectResume');
+  const [page, setPage] = useState('ProjectContact');
 
   let CurrentPage;
 
