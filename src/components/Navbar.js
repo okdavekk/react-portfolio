@@ -24,20 +24,20 @@ const styles = {
 
 function Navbar({setPage}) {
   return (
-    <nav style={styles.navbar}>
-      <button   style={styles.button}
+    <nav className="button btn-group-toggle" data-toggle="buttons" style={styles.navbar}>
+      <button className="button btn-secondary active" style={styles.button}
         href="#projectAboutMe" onClick={() => setPage('projectAboutMe')}>
           About Me
       </button>
-      <button   style={styles.button}
+      <button className="button"   style={styles.button}
         href="#projectPortfolio" onClick={() => setPage('projectPortfolio')}>
          Portfolio
       </button>
-      <button   style={styles.button}
+      <button className="button"  style={styles.button}
         href="#projectContact" onClick={() => setPage('projectContact')}>
          Contact
       </button>
-      <button   style={styles.button}
+      <button className="button"   style={styles.button}
         href="#projectResume" onClick={() => setPage('projectResume')}>
          Resume
       </button>

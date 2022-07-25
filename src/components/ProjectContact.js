@@ -10,11 +10,12 @@ const styles = {
     borderRadius: 8,
   },
   heading: {
+    fontWeight: 900,
     background: "#9a74db",
     minHeight: 50,
     lineHeight: 3.5,
     fontSize: "2.0rem",
-    color: "white",
+    // color: "white",
     padding: "0 20px",
     borderTopLeftRadius: 8,
     borderTopRightRadius: 8,

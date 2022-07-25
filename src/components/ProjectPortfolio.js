@@ -29,11 +29,14 @@ const styles = {
 
   },
   heading: {
+    fontWeight: 900,
+
+
     background: "#9a74db",
     minHeight: 50,
     lineHeight: 3.5,
     fontSize: "2.0rem",
-    color: "white",
+    // color: "white",
     padding: "0 20px",
     borderTopLeftRadius: 8,
     borderTopRightRadius: 8,
@@ -54,7 +57,6 @@ const styles = {
     color: "white",
     alignItems: "center",
     borderRadius: 8,
-    // margin: 4,
     justifyContent: "center",
     marginLeft: "auto",
     marginRight: "auto",
