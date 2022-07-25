@@ -48,7 +48,7 @@ function Card() {
           ***I choose not to have my full resume downloadable to the public at this
           time. Sorry.
         </p>
-        <a type="button" href="./Assets/Resume.pdf" download>
+        <a type="button" href="./Assets/resume.png" download>
           Click To Download A Sample Resume
         </a>
       </div>
