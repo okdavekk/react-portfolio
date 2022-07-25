@@ -12,13 +12,13 @@
 ## Resources
 - [REPOSITORY](https://github.com/okdavekk/social-network-api)
 
-- [HEROKU](https://secret-cliffs-49181.herokuapp.com
+- [HEROKU](https://secret-cliffs-49181.herokuapp.com)
 
 ## Installation
 Run these commands in the root of the directory:
 
 - npm i
-- npm run start
+- npm run start..
 
 ## Project Description
 ### Your Task
