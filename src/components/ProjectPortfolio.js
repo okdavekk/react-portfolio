@@ -79,7 +79,7 @@ const styles = {
     width: 400,
   },
   subHeading: {
-    fontWeight: 500,
+    fontWeight: 900,
     background: "#9a74db",
     minHeight: 50,
     lineHeight: 3.5,
