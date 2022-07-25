@@ -28,8 +28,24 @@ function Card() {
     <div style={styles.card}>
       <h1 style={styles.heading}>Resume</h1>
       <div style={styles.content}>
+        <h3>Skills</h3>
+        <ul>
+          <li>
+            Ambiguity
+          </li>
+          <li>
+            Tech Start-ups
+          </li>
+          <li>
+            Aviation
+          </li>
+          <li>
+            Drones
+          </li>
+
+        </ul>
         <p>
-          I choose not to have my full resume downloadable to the public at this
+          ***I choose not to have my full resume downloadable to the public at this
           time. Sorry.
         </p>
         <a type="button" href="./Assets/Resume.pdf" download>
