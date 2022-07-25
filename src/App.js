@@ -39,22 +39,4 @@ function App() {
   );
 }
 
-
-
-// function App() {
-//   return (
-//     <main style={styles.main}>
-//     <div>
-//       <Header />
-//       <Navbar />
-//       <ProjectAboutMe />
-//       <ProjectPortfolio />
-//       <ProjectContact />
-//       <ProjectResume />
-//       <Footer />
-//     </div>
-//     </main>
-//   );
-// }
-
 export default App;

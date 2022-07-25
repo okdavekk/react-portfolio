@@ -1,5 +1,6 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.css";
+import resume from "./Assets/resume.png";
 
 const styles = {
   card: {
@@ -48,7 +49,7 @@ function Card() {
           ***I choose not to have my full resume downloadable to the public at this
           time. Sorry.
         </p>
-        <a type="button" href="./Assets/resume.png" download>
+        <a type="button" download="resume" href={resume}>
           Click To Download A Sample Resume
         </a>
       </div>

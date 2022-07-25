@@ -42,6 +42,9 @@ const styles = {
     padding: 20,
     color: "white",
     textAlign: "center",
+    // minHeight: 400,
+    // height: "100vh",
+    // width: 400,
   },
   button: {
     display: "flex",
@@ -68,6 +71,9 @@ const styles = {
     background: "#2f2f2f",
     borderRadius: 8,
     textAlign: "center",
+    height: 400,
+    minHeight: 200,
+    width: 400,
   },
   subHeading: {
     background: "#9a74db",
@@ -90,7 +96,7 @@ function Card() {
         Portfolio
       </h1>
       
-      <div style={styles.content}>
+      <div className="d-flex flex-wrap " style={styles.content}>
         <section style={styles.section}>
           <h4 style={styles.subHeading}>Food Genie</h4>
           <input
