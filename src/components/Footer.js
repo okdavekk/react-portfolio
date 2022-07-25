@@ -9,6 +9,7 @@ const styles = {
     textAlign: "center",
     padding: 20,
     borderRadius: 8,
+
   },
   h2: {
     fontSize: "1.5rem",

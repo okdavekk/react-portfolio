@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 import "bootstrap/dist/css/bootstrap.css";
 
 const styles = {
@@ -18,27 +18,30 @@ const styles = {
   },
 };
 
+
 function Form() {
-  const [Name, setName] = useState("");
-  const [Email, setEmail] = useState("");
+  const [Name, setName] = useState('');
+  const [Email, setEmail] = useState('');
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
 
-    return name === "Name" ? setName(value) : setEmail(value);
+    return name === 'Name' ? setName(value) : setEmail(value);
   };
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
 
     alert(`Hello Return Visitor: ${Name} ${Email}`);
-    setName("");
-    setEmail("");
+    setName('');
+    setEmail('');
   };
 
   return (
     <div>
-      <p>Hello Return Visitor {Name}</p>
+      <p>
+        Hello Return Visitor {Name}
+      </p>
       <form className="form">
         <input
           style={styles.input}
@@ -48,19 +51,20 @@ function Form() {
           type="text"
           placeholder="Name"
         />
-
+      
         <p>
-          <input
-            style={styles.input}
-            value={Email}
-            name="Email"
-            onChange={handleInputChange}
-            type="text"
-            placeholder="Email"
-          />
+        <input
+              style={styles.input}
+          value={Email}
+          name="Email"
+          onChange={handleInputChange}
+          type="text"
+          placeholder="Email"
+        />
         </p>
-
-        <button style={styles.button} onClick={handleFormSubmit}>
+        <button 
+        style={styles.button}
+        onClick={handleFormSubmit}>
           Submit
         </button>
       </form>
