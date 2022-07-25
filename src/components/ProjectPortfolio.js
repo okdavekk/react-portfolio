@@ -58,9 +58,9 @@ const styles = {
     marginBottom: 8,
   },
   input: {
-    margin: 20,
+    padding: 10,
     height: 200,
-    width: 200,
+    width: "auto",
   },
   section: {
     margin: "auto",
