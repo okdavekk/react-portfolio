@@ -14,6 +14,8 @@
 
 - [HEROKU](https://secret-cliffs-49181.herokuapp.com)
 
+- [GITHUB DEPLOY LINK](https://okdavekk.github.io/react-portfolio/)
+
 ## Installation
 Run these commands in the root of the directory:
 
