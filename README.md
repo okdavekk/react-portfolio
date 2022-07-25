@@ -12,15 +12,15 @@
 ## Resources
 - [REPOSITORY](https://github.com/okdavekk/social-network-api)
 
-- [HEROKU](https://secret-cliffs-49181.herokuapp.com)
+- [HEROKU DEPLOYED LINK](https://secret-cliffs-49181.herokuapp.com)
 
-- [GITHUB DEPLOY LINK](https://okdavekk.github.io/react-portfolio/)
+- [GITHUB DEPLOYED LINK](https://okdavekk.github.io/react-portfolio/)
 
 ## Installation
 Run these commands in the root of the directory:
 
 - npm i
-- npm run start..
+- npm run start
 
 ## Project Description
 ### Your Task
