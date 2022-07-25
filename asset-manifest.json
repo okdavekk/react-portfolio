@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/react-portfolio/static/css/main.9ff23e91.css",
+    "main.js": "/react-portfolio/static/js/main.f82188b5.js",
+    "static/media/seoRefactorPic.png": "/react-portfolio/static/media/seoRefactorPic.c61e8df3043cae39653f.png",
+    "static/media/moviePreferencesPic.png": "/react-portfolio/static/media/moviePreferencesPic.65139165be420aedb52c.png",
+    "static/media/myPortfolioPic.png": "/react-portfolio/static/media/myPortfolioPic.b393ff2378839baad899.png",
+    "static/media/foodGeniePic.png": "/react-portfolio/static/media/foodGeniePic.d0516f4df1d78a0f7350.png",
+    "static/media/myWorkDaySchedulerPic.png": "/react-portfolio/static/media/myWorkDaySchedulerPic.c445dd208e9eadc92ce7.png",
+    "static/media/textEditorPic.png": "/react-portfolio/static/media/textEditorPic.763274b84f091e1a9ce3.png",
+    "static/media/pic.png": "/react-portfolio/static/media/pic.9013e12f9fe559932348.png",
+    "index.html": "/react-portfolio/index.html",
+    "main.9ff23e91.css.map": "/react-portfolio/static/css/main.9ff23e91.css.map",
+    "main.f82188b5.js.map": "/react-portfolio/static/js/main.f82188b5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9ff23e91.css",
+    "static/js/main.f82188b5.js"
+  ]
+}
