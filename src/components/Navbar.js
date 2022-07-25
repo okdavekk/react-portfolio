@@ -30,7 +30,7 @@ function Navbar({setPage}) {
           About Me
       </button>
       <button   style={styles.button}
-        href="#projectPorfolio" onClick={() => setPage('projectPorfolio')}>
+        href="#projectPortfolio" onClick={() => setPage('projectPortfolio')}>
          Portfolio
       </button>
       <button   style={styles.button}

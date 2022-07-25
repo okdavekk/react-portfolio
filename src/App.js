@@ -18,14 +18,14 @@ const styles = {
 
 function App() {
   
-  const [page, setPage] = useState('ProjectContact');
+  const [page, setPage] = useState('projectAboutMe');
 
   let CurrentPage;
 
-  if (page === 'ProjectAboutMe') CurrentPage= ProjectAboutMe;
-  if (page === 'ProjectPortfolio') CurrentPage= ProjectPortfolio;
-  if (page === 'ProjectContact') CurrentPage= ProjectContact;
-  if (page === 'ProjectResume') CurrentPage= ProjectResume;
+  if (page === 'projectAboutMe') CurrentPage= ProjectAboutMe;
+  if (page === 'projectPortfolio') CurrentPage= ProjectPortfolio;
+  if (page === 'projectContact') CurrentPage= ProjectContact;
+  if (page === 'projectResume') CurrentPage= ProjectResume;
 
   return (
     <main style={styles.main}>
