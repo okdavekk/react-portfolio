@@ -54,11 +54,12 @@ function Form() {
       
         <p>
         <input
-              style={styles.input}
+          style={styles.input}
           value={Email}
           name="Email"
           onChange={handleInputChange}
-          type="text"
+          // type="text"
+          email="text"
           placeholder="Email"
         />
         </p>

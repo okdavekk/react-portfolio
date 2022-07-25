@@ -1,15 +1,19 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.css";
 
+const foodGenieDeployed = "https://n3330.github.io/Food-Genie/";
+const moviePreferencesDeployed = "https://shielded-waters-71876.herokuapp.com/";
+const myPortfolioDeployed = "https://okdavekk.github.io/my-portfolio/";
+const myWorkDaySchedulerDeployed = "https://okdavekk.github.io/work-day-scheduler/";
+const textEditorDeployed = "https://desolate-beyond-67319.herokuapp.com/";
+const seoRefactorDeployed = "https://okdavekk.github.io/seo-refactor/";
 
-// const foodGeniePic = "./Assets/foodGeniePic";
-
-const foodGenie = "https://n3330.github.io/Food-Genie/";
-const moviePreferences = "https://shielded-waters-71876.herokuapp.com/";
-const myPortfolio = "https://okdavekk.github.io/my-portfolio/";
-const myWorkDayScheduler = "https://okdavekk.github.io/work-day-scheduler/";
-const textEditor = "https://desolate-beyond-67319.herokuapp.com/";
-const seoRefactor = "https://okdavekk.github.io/seo-refactor/";
+const foodGenieGithub ="https://github.com/N3330/Food-Genie";
+const moviePreferencesGithub ="https://github.com/okdavekk/movie-preferences";
+const myPortfolioGithub ="https://github.com/okdavekk/my-portfolio";
+const myWorkDaySchedulerGithub ="https://github.com/okdavekk/work-day-scheduler";
+const textEditorGithub ="https://github.com/okdavekk/text-editor";
+const seoRefactorGithub ="https://github.com/okdavekk/seo-refactor";
 
 const openInNewTab = (url) => {
   window.open(url, "_blank", "noopener,noreferrer");
@@ -61,71 +65,136 @@ function Card() {
       <div style={styles.heading}>Portfolio</div>
       <div style={styles.content}>
 
-          <button>
+          <section>
             <h4>Food Genie</h4>
             <input
               style={styles.input}
               type="image"
               src={require("./Assets/foodGeniePic.png")}
               alt="Food Genie"
-              onClick={() => openInNewTab(foodGenie)}
             ></input>
-          </button>
+            <button
+            style={styles.button}
+            onClick={() => openInNewTab(foodGenieDeployed)}>
+            Food Genie Deployed Site
+            </button>
+            <button
+            style={styles.button}
+            onClick={() => openInNewTab(foodGenieGithub)}>
+            Food Genie Github
+            </button>
+            <br></br>
 
-          <button>
+          </section>
+          <section>
             <h4>Movie Preferences</h4>
             <input
               style={styles.input}
               type="image"
               src={require("./Assets/moviePreferencesPic.png")}
               alt="Movie Preferences"
-              onClick={() => openInNewTab(moviePreferences)}
             ></input>
-          </button>
+            <button
+            style={styles.button}
+            onClick={() => openInNewTab(moviePreferencesDeployed)}>
+            Movie Preferences Deployed Site
+            </button>
+            <button
+            style={styles.button}
+            onClick={() => openInNewTab(moviePreferencesGithub)}>
+            Movie Preferences Github
+            </button>
+            <br></br>
 
-          <button>
+          </section>
+          <section>
             <h4>My HTML & CSS Portfolio</h4>
             <input
               style={styles.input}
               type="image"
               src={require("./Assets/myPortfolioPic.png")}
               alt="My Portfolio"
-              onClick={() => openInNewTab(myPortfolio)}
+              onClick={() => openInNewTab(myPortfolioDeployed)}
             ></input>
-          </button>
+           <button
+            style={styles.button}
+            onClick={() => openInNewTab(myPortfolioDeployed)}>
+            My Portfolio Deployed Site
+            </button>
+            <button
+            style={styles.button}
+            onClick={() => openInNewTab(myPortfolioGithub)}>
+            My Portfolio Github
+            </button>
+            <br></br>
 
-          <button>
+          </section>
+          <section>
             <h4>My Work Day Scheduler</h4>
             <input
               style={styles.input}
               type="image"
               src={require("./Assets/myWorkDaySchedulerPic.png")}
               alt="My Work Day Scheduler"
-              onClick={() => openInNewTab(myWorkDayScheduler)}
+              onClick={() => openInNewTab(myWorkDaySchedulerDeployed)}
             ></input>
-          </button>
+            <button
+            style={styles.button}
+            onClick={() => openInNewTab(myWorkDaySchedulerDeployed)}>
+            My Work Day Scheduler Deployed Site
+            </button>
+            <button
+            style={styles.button}
+            onClick={() => openInNewTab(myWorkDaySchedulerGithub)}>
+            My Work Day Scheduler Github
+            </button>
 
-          <button>
+            <br></br>
+
+            </section>
+            <section>
             <h4>Text Editor</h4>
             <input
               style={styles.input}
               type="image"
               src={require("./Assets/textEditorPic.png")}
               alt="Text Editor"
-              onClick={() => openInNewTab(textEditor)}
+              onClick={() => openInNewTab(textEditorDeployed)}
             ></input>
-          </button>
+            <button
+            style={styles.button}
+            onClick={() => openInNewTab(textEditorDeployed)}>
+            Text Editor Deployed Site
+            </button>
+            <button
+            style={styles.button}
+            onClick={() => openInNewTab(textEditorGithub)}>
+            Text Editor Github
+            </button>
 
-          <button>
+            <br></br>
+
+            </section>
+            <section>
             <h4>SEO Refactor</h4>
             <input
               style={styles.input}
               type="image"
               src={require("./Assets/seoRefactorPic.png")}
               alt="SEO Refactor"
-              onClick={() => openInNewTab(seoRefactor)}
+              onClick={() => openInNewTab(seoRefactorDeployed)}
             ></input>
-          </button>
+            <button
+            style={styles.button}
+            onClick={() => openInNewTab(seoRefactorDeployed)}>
+            SEO Refactor Deployed Site
+            </button>
+            <button
+            style={styles.button}
+            onClick={() => openInNewTab(seoRefactorGithub)}>
+            SEO Refactor Github
+            </button>
+            </section>
       </div>
     </div>
   );
