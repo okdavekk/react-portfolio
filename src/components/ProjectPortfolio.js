@@ -42,7 +42,6 @@ const styles = {
     padding: 20,
     color: "white",
     textAlign: "center",
-
   },
   button: {
     display: "flex",
@@ -51,9 +50,12 @@ const styles = {
     color: "white",
     alignItems: "center",
     borderRadius: 8,
-    margin: 4,
+    // margin: 4,
     justifyContent: "center",
-
+    marginLeft: "auto",
+    marginRight: "auto",
+    marginTop: 8,
+    marginBottom: 8,
   },
   input: {
     margin: 20,
@@ -61,7 +63,7 @@ const styles = {
     width: 200,
   },
   section: {
-    // margin: 50,
+    margin: "auto",
     maxWidth: 300,
     background: "#2f2f2f",
     borderRadius: 8,
@@ -78,17 +80,16 @@ const styles = {
     borderTopRightRadius: 8,
     alignItems: "center",
     textAlign: "center",
-
   },
 };
 
 function Card() {
   return (
-    <div
-    className="flex-wrap" style={styles.card}>
-      <div 
-      className="d-flex align-items-center"
-      style={styles.heading}>Portfolio</div>
+    <div className="flex-wrap" style={styles.card}>
+      <h1 className="d-flex align-items-center" style={styles.heading}>
+        Portfolio
+      </h1>
+      
       <div style={styles.content}>
         <section style={styles.section}>
           <h4 style={styles.subHeading}>Food Genie</h4>

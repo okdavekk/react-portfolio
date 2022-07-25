@@ -28,7 +28,7 @@ const styles = {
 function Card() {
   return (
     <div style={styles.card}>
-      <div style={styles.heading}>Contact</div>
+      <h1 style={styles.heading}>Contact</h1>
       <div style={styles.content}>
 <Form />
       </div>

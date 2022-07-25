@@ -26,7 +26,7 @@ const styles = {
 function Card() {
   return (
     <div style={styles.card}>
-      <div style={styles.heading}>Resume</div>
+      <h1 style={styles.heading}>Resume</h1>
       <div style={styles.content}>
         <p>
           I choose not to have my full resume downloadable to the public at this

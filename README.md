@@ -12,7 +12,7 @@
 ## Resources
 - [REPOSITORY](https://github.com/okdavekk/social-network-api)
 
-- [VIDEO WALKTHROUGH](https://www.awesomescreenshot.com/video/10031916?key=02b29b5938dfe56e0a98f39294111571)
+- [HEROKU](https://secret-cliffs-49181.herokuapp.com
 
 ## Installation
 Run these commands in the root of the directory:

@@ -31,7 +31,7 @@ const styles = {
 function Card() {
   return (
     <div style={styles.card}>
-      <div style={styles.heading}>About Me</div>
+      <h1 style={styles.heading}>About Me</h1>
       <div style={styles.content}>
         <img style={styles.image} src={Pic} alt="Me" />
         <p>
