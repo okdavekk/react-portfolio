@@ -12,7 +12,7 @@
 ## Resources
 - [REPOSITORY](https://github.com/okdavekk/social-network-api)
 
-- [HEROKU DEPLOYED LINK](https://secret-cliffs-49181.herokuapp.com)
+- [HEROKU DEPLOYED LINK](https://github.com/okdavekk/react-portfolio)
 
 - [GITHUB DEPLOYED LINK](https://okdavekk.github.io/react-portfolio/)
 
