@@ -12,9 +12,9 @@
 ## Resources
 - [REPOSITORY](https://github.com/okdavekk/social-network-api)
 
-- [HEROKU DEPLOYED LINK](https://github.com/okdavekk/react-portfolio)
-
 - [GITHUB DEPLOYED LINK](https://okdavekk.github.io/react-portfolio/)
+
+- [HEROKU BROKEN LINK (since its in GitHub)](https://github.com/okdavekk/react-portfolio)
 
 ## Installation
 Run these commands in the root of the directory:
